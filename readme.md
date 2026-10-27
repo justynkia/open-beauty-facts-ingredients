@@ -1,7 +1,7 @@
 
-Ingredient analysis of body, face and suncare cosmetics available in France. 
+##Ingredient analysis of body, face and suncare cosmetics available in France. 
 
-Data Source and Licensing:
+##Data Source and Licensing:
 
 Code, SQL queries, classification and analysis: MIT License (see LICENSE).
 
@@ -15,7 +15,7 @@ The ODbL applies to the source database and qualifying derivative databases.
 The data was processed and analyzed for a non-commercial portfolio project using Python, Excel, SQL, and Power BI.
 
 
-Project information
+## Project information
 
 Python - data cleaning and preparation
 Excel - ingredient classification
@@ -30,22 +30,29 @@ suncare: 116 products
 manually classified 200 ingredients (divided into 15 main classes added flag for EU allergens): 68.7% of all ingredients covered
 
 
-Project dashboards:
 
-Overview:
-![Project Overview][docs/overview.png]
+## Project Dashboards
 
-Details:
-![Project Details][docs/details.png]
+### Overview
+
+![Project Overview](docs/overview.png)
+
+### Details
+
+![Project Details](docs/details.png)
+
+## Full Summary
+
+[View the full summary (PDF)](docs/summary.pdf)
+
+## Power BI Dashboard
+
+[Open the Power BI dashboard file](powerbi/visualization.pbix)
 
 
 
 
-
-
-
-
-Key findings
+## Key findings
 
 All categories - body, face and suncare share the same core: water, glycerin and fragrance as TOP 3 most commonly used ingredients.
 Face and body products are very similar in composition.
@@ -55,7 +62,6 @@ Products with at least one allergen in INCI: for body products -  49%, face  - 4
 Most common allergens for all categories are linalool, limonene and geraniol.
 
 
-Full summary: [docs/summary.pdf]
 
 Repository structure:
 |- README.md
@@ -73,7 +79,7 @@ Repository structure:
 |- tables/ (product tables exported by openbeauty.py)
 |- powerbi/ ( visualisation and Excel source files)
 
-Limitations:
+## Limitations:
 User-contributed data: typos and name variants remain, so counts of some ingredients may be understated
 Classification and allergen flags cover the top 200 ingredients (68.7% of occurrences) only
 INCI lists give no concentrations of each ingredient; a listed ingredient does not mean a harmful product
@@ -84,7 +90,7 @@ Names ending in a closing bracket lost it during cleaning (255 of 19,219 entries
 
 
 
-How to reproduce
+## How to reproduce
 1. Download the Open Beauty Facts CSV export ([https://world.openbeautyfacts.org/data](https://world.openbeautyfacts.org/data))
    and save it as “data/raw/products.csv” [mentioned in repository structure]
 
@@ -103,7 +109,7 @@ python/build_powerbi_xlsx.py
 
 
 
-Author
+## Author
 Justyna Karczmarz · [LinkedIn]
 
 
