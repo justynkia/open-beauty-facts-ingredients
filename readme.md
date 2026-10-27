@@ -1,7 +1,7 @@
 
-##Ingredient analysis of body, face and suncare cosmetics available in France. 
+## Ingredient analysis of body, face and suncare cosmetics available in France. 
 
-##Data Source and Licensing:
+## Data Source and Licensing:
 
 Code, SQL queries, classification and analysis: MIT License (see LICENSE).
 
