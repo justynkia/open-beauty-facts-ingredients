@@ -16,7 +16,7 @@ The data was processed and analyzed for a non-commercial portfolio project using
 
 
 ## Project information
-
+```
 Python - data cleaning and preparation
 Excel - ingredient classification
 SQL - data analysis
@@ -28,7 +28,7 @@ body: 388 products
 face: 482 products
 suncare: 116 products
 manually classified 200 ingredients (divided into 15 main classes added flag for EU allergens): 68.7% of all ingredients covered
-
+```
 
 
 ## Project Dashboards
@@ -53,15 +53,20 @@ manually classified 200 ingredients (divided into 15 main classes added flag for
 
 
 ## Key findings
-
+```
 All categories - body, face and suncare share the same core: water, glycerin and fragrance as TOP 3 most commonly used ingredients.
+
 Face and body products are very similar in composition.
+
 In suncare category, most popular UV filter is butyl methoxydibenzoylmethane (49.1% of all suncare products).
+
 Fragrance is declared in 75% of body products,  67% of face products and 55% of suncare products.
-Products with at least one allergen in INCI: for body products -  49%, face  - 41% and suncare -  35%
+
+Products with at least one allergen in INCI: for body products -  49%, face  - 41% and suncare -  35%.
+
 Most common allergens for all categories are linalool, limonene and geraniol.
 
-
+```
 
 
 ## Repository Structure
@@ -87,15 +92,22 @@ projekt_openbeauty/
 ```
 
 ## Limitations:
-User-contributed data: typos and name variants remain, so counts of some ingredients may be understated
-Classification and allergen flags cover the top 200 ingredients (68.7% of occurrences) only
-INCI lists give no concentrations of each ingredient; a listed ingredient does not mean a harmful product
-Products with several categories are counted in each
-Suncare sample is small (116)
-Colour Index pigments (e.g. CI 77891) were removed by the junk filter, so ingredient counts of tinted products are understated. 
-Names ending in a closing bracket lost it during cleaning (255 of 19,219 entries, 138 products), so some variants were not merged (e.g. paraffinum liquidum 106 products plus about 32 in unmerged variants) 
+```
+User-contributed data: typos and name variants remain, so counts of some ingredients may be understated.
 
+Classification and allergen flags cover the top 200 ingredients (68.7% of occurrences) only.
 
+INCI lists give no concentrations of each ingredient; a listed ingredient does not mean a harmful product.
+
+Products with several categories are counted in each.
+
+Suncare sample is small (116).
+
+Colour Index pigments (e.g. CI 77891) were removed by the junk filter, so ingredient counts of tinted products are understated.
+
+Names ending in a closing bracket lost it during cleaning (255 of 19,219 entries, 138 products), as a result some variants were not merged (e.g. paraffinum liquidum 106 products plus about 32 in unmerged variants).
+
+```
 
 ## How to reproduce
 1. Download the Open Beauty Facts CSV export ([https://world.openbeautyfacts.org/data](https://world.openbeautyfacts.org/data))
