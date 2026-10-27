@@ -1,0 +1,12 @@
+   data/raw/*
+   /data/raw/products.csv
+   !data/raw/.gitkeep
+   /france_clean.csv
+   /product_ingredients.csv
+   /ingredients_to_clasify.csv
+   __pycache__/
+   .ipynb_checkpoints/
+   .vscode/
+   ~$*.xlsx
+   *.db
+/data/raw/products.csv
