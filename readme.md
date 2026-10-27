@@ -63,21 +63,28 @@ Most common allergens for all categories are linalool, limonene and geraniol.
 
 
 
-Repository structure:
-|- README.md
-|- LICENSE
-|- requirements.txt
-|- data/raw    [products.csv should be here, see below]
-|- python/
-|-|- openbeauty.py (cleaning, preparing and export of tables)
-|-|- build_powerbi_xlsx.py (build xlsx files for Power BI)
-|- sql/
-|-|- 01_schema.sql
-|-|- 02_queries.sql (data analysis)
-|- classification/
-|-|- ingredients_classification.csv (200 ingredients classified manually)
-|- tables/ (product tables exported by openbeauty.py)
-|- powerbi/ ( visualisation and Excel source files)
+
+## Repository Structure
+
+```text
+projekt_openbeauty/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── data/
+│   └── raw/
+│       └── products.csv  (download separately; see instructions below)
+├── python/
+│   ├── openbeauty.py  (cleaning, preparation, and table exports)
+│   └── build_powerbi_xlsx.py  (builds Excel files for Power BI)
+├── sql/
+│   ├── 01_schema.sql
+│   └── 02_queries.sql  (data analysis)
+├── classification/
+│   └── ingredients_classification.csv  (200 manually classified ingredients)
+├── tables/  (product tables exported by openbeauty.py)
+└── powerbi/  (visualization and Excel source files)
+```
 
 ## Limitations:
 User-contributed data: typos and name variants remain, so counts of some ingredients may be understated
@@ -110,7 +117,7 @@ python/build_powerbi_xlsx.py
 
 
 ## Author
-Justyna Karczmarz · [LinkedIn]
+Justyna Karczmarz · [LinkedIn](https://www.linkedin.com/in/justyna-karczmarz-51ab06446/)
 
 
 
