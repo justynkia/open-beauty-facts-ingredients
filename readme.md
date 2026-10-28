@@ -47,7 +47,7 @@ manually classified 200 ingredients (divided into 15 main classes added flag for
 
 ## Power BI Dashboard
 
-[Open the Power BI dashboard file](powerbi/visualization.pbix)
+[Open the Power BI dashboard file](power_bi/visualization.pbix)
 
 
 
