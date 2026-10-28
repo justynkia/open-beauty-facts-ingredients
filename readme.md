@@ -7,7 +7,7 @@ Code, SQL queries, classification and analysis: MIT License (see LICENSE).
 
 Data: this project contains data from Open Beauty Facts, available under the Open Database License (ODbL) v1.0: https://opendatacommons.org/licenses/odbl/1-0/. 
 Downloaded 15.10.2026 from https://world.openbeautyfacts.org. 
-Files in tables/ and the Excel files in powerbi/ are derived from this database and are shared under the same ODbL license.
+Files in `tables/` and the Excel files in `powerbi/` are derived from this database and are shared under the same ODbL license.
 
 The ODbL applies to the source database and qualifying derivative databases. 
 
