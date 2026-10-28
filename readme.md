@@ -113,20 +113,32 @@ Names ending in a closing bracket lost it during cleaning (255 of 19,219 entries
 1. Download the Open Beauty Facts CSV export ([https://world.openbeautyfacts.org/data](https://world.openbeautyfacts.org/data))
    and save it as “data/raw/products.csv” [mentioned in repository structure]
 
-2. Install dependencies: “pip install -r requirements.txt” (pandas, openpyxl)
+2. Install dependencies: `pip install -r requirements.txt` (pandas, openpyxl)
 
 
 3. Run from the project root:
-python/openbeauty.py
-python/build_powerbi_xlsx.py
+  ```
+  python python/openbeauty.py
+  python python/build_powerbi_xlsx.py
+  ```
 
- The first script (openbeauty.py) cleans the data and writes the tables to “tables/”. 
- The second one builds the SQLite tables and views from “sql/” and exports “open_beauty_power_bi.xlsx” and “class_counts_ranking10.xlsx” for Power BI.
+ The first script (openbeauty.py) cleans the data and writes the tables to `tables/`. 
+ The second one builds the SQLite tables and views from `sql/` and exports “open_beauty_power_bi.xlsx” and “class_counts_ranking10.xlsx” for Power BI.
  
 4. Open “powerbi/visualization.pbix” and click Refresh. If Power BI cannot find the files,
    change the paths in File → Options and settings → Data source settings.
 
+## How I used AI
 
+**My work:** the data cleaning approach, the manual classification of the 200 ingredients, the choice of analyses and the conclusions.
+
+**AI assistance (Claude):** review: code and report, plus some of the code (the Power BI export script, some cleaning fixes and the custom DAX measures that draw the bars in the UV filters table).
+
+**Critical review of suggestions:** I did not apply suggestions automatically. 
+I declined extra analyses and chart labels that hurt readability and were unnecessary for this analysis, removed a slicer that only filtered the KPI cards, rejected KPI proposals that duplicated the charts, and corrected steps that did not match my Power BI version. 
+Instead of re-running the whole pipeline, I documented two known cleaning limitations in the README.
+
+**Verification:** I checked suggestions against the data before applying them.
 
 ## Author
 Justyna Karczmarz · [LinkedIn](https://www.linkedin.com/in/justyna-karczmarz-51ab06446/)
